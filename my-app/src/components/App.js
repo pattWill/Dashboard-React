@@ -3,7 +3,8 @@ import '../assets/css/app.css';
 import TopBar from './TopBar';
 import Footer from './Footer';
 import ContentRowTop from './ContentRowTop';
-import ContentWrapper from './ContentWrapper'
+import LastMovieInDB from './LastMovieInDB'
+import GenresInDb from './GenresInDb'
 import SlideBar from './SlideBar';
 import React from "react";
 function App() {
@@ -16,6 +17,9 @@ function App() {
            
       <TopBar />
       <ContentRowTop />
+      <LastMovieInDB />
+      <GenresInDb />
+      <Footer />
     </div>
     </div>
     </div>
