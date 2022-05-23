@@ -1,17 +1,23 @@
 
-import '../App.css';
+import '../assets/css/app.css';
+import TopBar from './TopBar';
+import Footer from './Footer';
+import ContentRowTop from './ContentRowTop';
+import ContentWrapper from './ContentWrapper'
 import SlideBar from './SlideBar';
-
+import React from "react";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-  
 
-        <SlideBar />
-      
-      </header>
-      
+    <div id ='wrapper'> 
+    <SlideBar />  
+		<div id="content-wrapper" className="d-flex flex-column">
+			<div id="content">
+           
+      <TopBar />
+      <ContentRowTop />
+    </div>
+    </div>
     </div>
   );
 }
